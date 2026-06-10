@@ -78,6 +78,6 @@ sistema-cadastro/
 
 ## 👨‍💻 Autor
 
-**Rafael** — Estudante de Sistemas de Informação - UniLaSalle Rio de Janeiro  
-📧 [seu-email@email.com]  
-🔗 [linkedin.com/in/seu-perfil]
+**Luis Fillipe Backer Faria** — Estudante de Sistemas de Informação - UniLaSalle Rio de Janeiro  
+📧 [lfillipebf@gmail.com]  
+🔗 [www.linkedin.com/in/luis-fillipe-backer-faria-bb8101303]
