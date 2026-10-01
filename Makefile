@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
-SRC = src/main.c
+SRC = main.c
 OUT = sistema-cadastro
 
 all:
