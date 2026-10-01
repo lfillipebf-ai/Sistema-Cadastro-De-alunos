@@ -28,7 +28,7 @@ void   exibirAluno(Aluno a);
 void   limparBuffer();
 
 // ========================
-// FUN«√O PRINCIPAL
+// FUN√á√ÉO PRINCIPAL
 // ========================
 int main() {
     Aluno alunos[MAX_ALUNOS];
@@ -91,7 +91,7 @@ void cadastrar(Aluno alunos[], int *total) {
     scanf("%d", &novo.matricula);
     limparBuffer();
 
-    // Verifica se matricula j· existe
+    // Verifica se matricula j√° existe
     for (int i = 0; i < *total; i++) {
         if (alunos[i].matricula == novo.matricula) {
             printf("Erro: matricula %d ja cadastrada!\n", novo.matricula);
@@ -212,7 +212,7 @@ void salvar(Aluno alunos[], int total) {
 // ========================
 int carregar(Aluno alunos[]) {
     FILE *arq = fopen(ARQUIVO, "rb");
-    if (!arq) return 0; // Arquivo ainda n√£o existe
+    if (!arq) return 0; // Arquivo ainda nao existe
 
     int total = 0;
     fread(&total, sizeof(int), 1, arq);
