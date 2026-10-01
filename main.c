@@ -123,6 +123,11 @@ void cadastrar(Aluno alunos[], int *total) {
     scanf("%f", &novo.nota2);
     limparBuffer();
 
+    if (novo.nota1 < 0 || novo.nota1 > 10 || novo.nota2 < 0 || novo.nota2 > 10) {
+        printf("Erro: as notas devem estar entre 0 e 10.\\n");
+        return;
+    }
+
     alunos[*total] = novo;
     (*total)++;
 
@@ -225,8 +230,15 @@ int carregar(Aluno alunos[]) {
     if (!arq) return 0; // Arquivo ainda nao existe
 
     int total = 0;
-    fread(&total, sizeof(int), 1, arq);
-    fread(alunos, sizeof(Aluno), total, arq);
+    if (fread(&total, sizeof(int), 1, arq) != 1 || total < 0 || total > MAX_ALUNOS) {
+        fclose(arq);
+        return 0;
+    }
+
+    if (fread(alunos, sizeof(Aluno), total, arq) != (size_t)total) {
+        fclose(arq);
+        return 0;
+    }
     fclose(arq);
 
     printf("(%d aluno(s) carregado(s) do arquivo)\n", total);
