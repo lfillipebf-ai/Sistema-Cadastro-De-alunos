@@ -5,7 +5,7 @@ Sistema de gerenciamento de alunos desenvolvido em linguagem C, com persistênci
 ## 📋 Funcionalidades
 
 - ✅ Cadastrar alunos (matrícula, nome, email, notas)
-- ✅ Listar todos os alunos com média e situação (Aprovado/Reprovado)
+- ✅ Listar todos os alunos com média e situação
 - ✅ Buscar aluno por matrícula
 - ✅ Remover aluno
 - ✅ Salvar e carregar dados automaticamente em arquivo binário
@@ -26,8 +26,8 @@ Sistema de gerenciamento de alunos desenvolvido em linguagem C, com persistênci
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/sistema-cadastro.git
-cd sistema-cadastro
+git clone https://github.com/lfillipebf-ai/Sistema-Cadastro-De-alunos.git
+cd Sistema-Cadastro-De-alunos
 
 # Compilar
 make
@@ -79,5 +79,5 @@ sistema-cadastro/
 ## 👨‍💻 Autor
 
 **Luis Fillipe Backer Faria** — Estudante de Sistemas de Informação - UniLaSalle Rio de Janeiro  
-📧 [lfillipebf@gmail.com]  
-🔗 [www.linkedin.com/in/luis-fillipe-backer-faria-bb8101303]
+📧 lfillipebf@gmail.com  
+🔗 linkedin.com/in/luis-fillipe-backer-faria-bb8101303
