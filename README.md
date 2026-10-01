@@ -38,7 +38,7 @@ make
 
 ### Ou manualmente:
 ```bash
-gcc -Wall -std=c11 src/main.c -o sistema-cadastro
+gcc -Wall -std=c11 main.c -o sistema-cadastro
 ./sistema-cadastro
 ```
 
@@ -46,8 +46,7 @@ gcc -Wall -std=c11 src/main.c -o sistema-cadastro
 
 ```
 sistema-cadastro/
-├── src/
-│   └── main.c        # Código fonte principal
+├── main.c            # Código fonte principal
 ├── data/
 │   └── alunos.dat    # Arquivo de dados (gerado automaticamente)
 ├── Makefile
