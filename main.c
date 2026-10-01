@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef _WIN32
+#include <direct.h>
+#else
+#include <sys/stat.h>
+#endif
 
 #define MAX_ALUNOS 100
 #define ARQUIVO "data/alunos.dat"
@@ -31,6 +36,11 @@ void   limparBuffer();
 // FUNÇÃO PRINCIPAL
 // ========================
 int main() {
+#ifdef _WIN32
+    _mkdir("data");
+#else
+    mkdir("data", 0777);
+#endif
     Aluno alunos[MAX_ALUNOS];
     int total = 0;
     int opcao;
